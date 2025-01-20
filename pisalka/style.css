@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Rowdies", serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Исправлено: justify-content вместо justify-self */
+    min-height: 100vh;
+    background: #a6a6b6;
+    flex-direction: column; /* Вопросы будут располагаться вертикально */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    max-width: 500px; /* Ограничение ширины формы */
+    width: 90%; /* Адаптивная ширина */
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+p {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+label {
+    display: block; /* Варианты ответа будут располагаться друг под другом */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background: #3c91e6;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2b72bd;
+}
+
+
+/* Стили для страницы результатов */
+body.result-page { /* Добавляем класс body для страницы result.php */
+  text-align: center; /* Центрируем текст */
+}
+
+body.result-page p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.retry-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3c91e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.retry-button:hover {
+    background-color: #2b72bd;
+}
+
+
+
